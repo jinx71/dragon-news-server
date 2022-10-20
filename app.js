@@ -9,6 +9,9 @@ app.use(cors())
 app.get("/categories", (req, res) => {
   res.send(data)
 });
+app.get("/home", (req, res) => {
+  res.send(news)
+});
 app.get("/news/:id", (req, res) => {
   // console.log(req.params.id)
   const id = req.params.id
